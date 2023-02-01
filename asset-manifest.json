@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.091f70ec.css",
-    "main.js": "/static/js/main.70e32223.js",
-    "static/media/logo.jpg": "/static/media/logo.b3a933dba7b0d6ea9cc7.jpg",
-    "index.html": "/index.html",
-    "main.091f70ec.css.map": "/static/css/main.091f70ec.css.map",
-    "main.70e32223.js.map": "/static/js/main.70e32223.js.map"
+    "main.css": "/math-laba/static/css/main.7ede75ad.css",
+    "main.js": "/math-laba/static/js/main.767869fc.js",
+    "static/media/logo.jpg": "/math-laba/static/media/logo.b3a933dba7b0d6ea9cc7.jpg",
+    "index.html": "/math-laba/index.html",
+    "main.7ede75ad.css.map": "/math-laba/static/css/main.7ede75ad.css.map",
+    "main.767869fc.js.map": "/math-laba/static/js/main.767869fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.091f70ec.css",
-    "static/js/main.70e32223.js"
+    "static/css/main.7ede75ad.css",
+    "static/js/main.767869fc.js"
   ]
 }
