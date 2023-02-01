@@ -10,8 +10,12 @@ import { CataloguePage } from '../pages/CataloguePage/CataloguePage';
 import { ContactsPage } from '../pages/ContactsPage/ContactsPage';
 import { NotFoundPage } from '../pages/NotFoundPage/NotFoundPage';
 import { Footer } from '../widgets/Footer/Footer';
+import { baseUrl as url} from './constants/baseUrl';
 
 function App() {
+
+  const baseUrl = url;
+
   return (
     <div className={classes['App']}>
       <ErrorBoundary>
@@ -19,11 +23,11 @@ function App() {
             <Suspense fallback={<Spinner />}>
               <Header />
               <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/catalogue" element={<CataloguePage />} />
-                {/* <Route path="/catalogue/:id" element={<ItemPage />} /> */}
-                <Route path="/contacts" element={<ContactsPage />} />
-                <Route path="/*" element={<NotFoundPage />} />
+                <Route path={`/${baseUrl}`} element={<HomePage />} />
+                <Route path={`/${baseUrl}/catalogue`} element={<CataloguePage />} />
+                {/* <Route path={`/${baseUrl}/catalogue:id`} element={<ItemPage />} /> */}
+                <Route path={`/${baseUrl}/contacts`} element={<ContactsPage />} />
+                <Route path={`/${baseUrl}/*`} element={<NotFoundPage />} />
               </Routes>
               <Footer />
             </Suspense>
