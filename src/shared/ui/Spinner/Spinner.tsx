@@ -7,7 +7,7 @@ import classes from './Spinner.module.scss';
  */
 export const Spinner: React.FC = () => {
   return (
-    <div className={classes["lds-spinner"]}>
+    <div className={classes['lds-spinner']}>
       <div></div>
       <div></div>
       <div></div>
@@ -21,5 +21,5 @@ export const Spinner: React.FC = () => {
       <div></div>
       <div></div>
     </div>
-  )
+  );
 };

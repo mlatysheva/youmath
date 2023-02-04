@@ -7,7 +7,9 @@ interface Props {}
 const Header: React.FC<Props> = () => {
   return (
     <div className={classes.header}>
-      <a href='https://practicum.yandex.ru/' className={classes.logo}>Math Laboratory</a>
+      <a href="https://practicum.yandex.ru/" className={classes.logo}>
+        Math Laboratory
+      </a>
       <p className={classes.slogan}>Making the world a better math</p>
       <Search />
     </div>
@@ -15,4 +17,3 @@ const Header: React.FC<Props> = () => {
 };
 
 export { Header };
-
