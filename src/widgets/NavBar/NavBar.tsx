@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom';
 import { baseUrl as url } from '../../app/constants/baseUrl';
 import classes from './NavBar.module.scss';
-import React from 'react'
-
+import React from 'react';
 
 interface Props {}
 
