@@ -6,7 +6,7 @@
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -17,13 +17,10 @@
   text-transform: uppercase;
 }
 
-.header a.active {
-  color: var(--links-color);
+.logo {
+
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 2rem;
+.slogan {
+  
 }

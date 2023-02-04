@@ -11,17 +11,19 @@ import { ContactsPage } from '../pages/ContactsPage/ContactsPage';
 import { NotFoundPage } from '../pages/NotFoundPage/NotFoundPage';
 import { Footer } from '../widgets/Footer/Footer';
 import { baseUrl as url} from './constants/baseUrl';
+import { NavBar } from '../widgets/NavBar/NavBar';
 
 function App() {
 
   const baseUrl = url;
 
   return (
-    <div className={classes['App']}>
+    <div className={classes.App}>
       <ErrorBoundary>
           <BrowserRouter>
             <Suspense fallback={<Spinner />}>
               <Header />
+              <NavBar />
               <Routes>
                 <Route path={`/${baseUrl}`} element={<HomePage />} />
                 <Route path={`/${baseUrl}/catalogue`} element={<CataloguePage />} />

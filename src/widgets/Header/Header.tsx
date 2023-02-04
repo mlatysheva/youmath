@@ -1,20 +1,18 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 import classes from './Header.module.scss';
-import { baseUrl as url } from '../../app/constants/baseUrl';
+import { Search } from '../Search/Search';
 
-export const Header = () => {
+interface Props {}
 
-  const baseUrl = url;
-
+const Header: React.FC<Props> = () => {
   return (
     <div className={classes.header}>
-      <a href="" className="logo" target="_blank" rel="noreferrer"></a>
-      <div className={classes.nav}>
-        <Link to={`/${baseUrl}`}>Главная</Link>
-        <Link to={`/${baseUrl}/catalogue`}>Каталог</Link>
-        <Link to={`/${baseUrl}/contacts`}>Контакты</Link>
-      </div>
+      <a href='https://practicum.yandex.ru/' className={classes.logo}>Math Laboratory</a>
+      <p className={classes.slogan}>Making the world a better math</p>
+      <Search />
     </div>
-  )
+  );
 };
+
+export { Header };
 
