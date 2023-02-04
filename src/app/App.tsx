@@ -11,7 +11,7 @@ import { ContactsPage } from '../pages/ContactsPage/ContactsPage';
 import { NotFoundPage } from '../pages/NotFoundPage/NotFoundPage';
 import { Footer } from '../widgets/Footer/Footer';
 import { baseUrl as url} from './constants/baseUrl';
-import { NavBar } from '../widgets/Header/NavBar/NavBar';
+import { NavBar } from '../widgets/NavBar/NavBar';
 
 function App() {
 

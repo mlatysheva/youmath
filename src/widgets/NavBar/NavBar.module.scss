@@ -1,0 +1,20 @@
+.nav {
+  width: 100%;
+  height: var(--nav-height);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  background-color: var(--secondary-color);
+}
+
+.nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav a.active {
+  color: white;
+}

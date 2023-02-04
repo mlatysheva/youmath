@@ -1,3 +1,22 @@
+.header {
+  width: 100%;
+  height: var(--header-height);
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .logo {
 
 }
