@@ -6,11 +6,7 @@ interface Props {}
 export const Search: React.FC<Props> = () => {
   return (
     <div className={classes.searchContainer}>
-      <input
-        type="text"
-        className={classes.searchInput}
-        placeholder="Поиск..."
-      />
+      <input type="text" className={classes.searchInput} placeholder="Поиск..." />
       <button className={classes.searchButton}>Go</button>
     </div>
   );
