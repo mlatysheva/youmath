@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/math-laba/static/css/main.129bbc0e.css",
+    "main.css": "/math-laba/static/css/main.7f902fc9.css",
     "main.js": "/math-laba/static/js/main.55c0750a.js",
     "static/media/logo.jpg": "/math-laba/static/media/logo.b3a933dba7b0d6ea9cc7.jpg",
     "index.html": "/math-laba/index.html",
-    "main.129bbc0e.css.map": "/math-laba/static/css/main.129bbc0e.css.map",
+    "main.7f902fc9.css.map": "/math-laba/static/css/main.7f902fc9.css.map",
     "main.55c0750a.js.map": "/math-laba/static/js/main.55c0750a.js.map"
   },
   "entrypoints": [
-    "static/css/main.129bbc0e.css",
+    "static/css/main.7f902fc9.css",
     "static/js/main.55c0750a.js"
   ]
 }
