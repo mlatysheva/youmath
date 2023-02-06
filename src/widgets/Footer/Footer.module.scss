@@ -1,12 +1,33 @@
-.footer {
-  width: 100%;
-  height: var(--footer-height);
-  padding: 1rem;
-  bottom: 0;
-  background-color: var(--secondary-color);
+a {
+  text-decoration: none;
   color: white;
+}
+
+.booter {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  width: 100%;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.counter {
+  text-align: center;
+  display: inline-block;
+}
+
+.wrapper {
+  text-align: center;
+  display: inline-block;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
 }

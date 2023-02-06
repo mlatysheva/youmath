@@ -25,7 +25,10 @@ function App() {
             <NavBar />
             <Routes>
               <Route path={`/${baseUrl}`} element={<HomePage />} />
-              <Route path={`/${baseUrl}/catalogue`} element={<CataloguePage />} />
+              <Route
+                path={`/${baseUrl}/catalogue`}
+                element={<CataloguePage />}
+              />
               {/* <Route path={`/${baseUrl}/catalogue:id`} element={<ItemPage />} /> */}
               <Route path={`/${baseUrl}/contacts`} element={<ContactsPage />} />
               <Route path={`/${baseUrl}/*`} element={<NotFoundPage />} />
