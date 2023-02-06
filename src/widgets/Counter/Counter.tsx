@@ -6,7 +6,7 @@ interface Props {}
 export const Counter: React.FC<Props> = () => {
   return (
     <div className={classes.wrapper}>
-      <p>Visitor count: 12345</p> 
-    </div> 
+      <p>Visitor count: 12345</p>
+    </div>
   );
 };

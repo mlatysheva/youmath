@@ -56,7 +56,6 @@
     "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
-    "prettier": "^2.8.3",
     "stylelint-config-standard-scss": "^6.1.0",
     "typescript-plugin-css-modules": "^4.1.1"
   }

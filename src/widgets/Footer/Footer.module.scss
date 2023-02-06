@@ -1,6 +1,8 @@
 a {
   text-decoration: none;
+  color: white;
 }
+
 .booter {
   display: flex;
   justify-content: space-between;
@@ -12,7 +14,6 @@ a {
 }
 
 .copyright {
-  margin-top: 90px;
   text-align: center;
 }
 
@@ -25,6 +26,7 @@ a {
   text-align: center;
   display: inline-block;
 }
+
 .logo img {
   width: 70px;
   height: 70px;
