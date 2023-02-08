@@ -1,11 +1,9 @@
-import { ReactNode, Suspense } from 'react';
+import { ReactNode } from 'react';
 import classes from './Layout.module.scss';
 import { Header } from '../../../widgets/Header/Header';
 import { NavBar } from '../../../widgets/NavBar/NavBar';
 import { Footer } from '../../../widgets/Footer/Footer';
-import { Spinner } from '../Spinner/Spinner';
 import { Sidebar } from '../../../widgets/Sidebar/Sidebar';
-import { AppBar, Toolbar, Typography } from '@mui/material';
 
 interface LayoutProps {
   children: ReactNode;
