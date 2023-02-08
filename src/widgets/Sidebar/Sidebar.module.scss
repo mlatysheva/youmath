@@ -1,0 +1,9 @@
+.Sidebar {
+  width: var(--sidebar-width);
+  position: fixed;
+  top: -var(--header-height);
+}
+
+.drawerPaper {
+  width: var(--sidebar-width);
+}
