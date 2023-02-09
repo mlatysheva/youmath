@@ -29,18 +29,10 @@ export const categories = ['Высшая математика для гуман�
 
 export const Sidebar = () => {
   return (
-    <Drawer
-      className={classes.Sidebar}
-      variant='permanent'
-      anchor='left'
-      classes={{ paper: classes.drawerPaper }}
-    >
-      <div>
-        <Typography variant='h5'>
-          Sidebar
-        </Typography>
-      </div>
-        
-    </Drawer>
+    <div className={classes.Sidebar}>
+      <Typography variant='h5'>
+        Sidebar
+      </Typography>
+    </div>
   )
 }
