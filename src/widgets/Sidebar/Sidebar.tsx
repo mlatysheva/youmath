@@ -1,4 +1,4 @@
-import { Drawer, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import classes from './Sidebar.module.scss';
 
 export const categories = ['Высшая математика для гуманитариев (М.А. Евдокимов, С.Г. Афанасьева, 2005)',

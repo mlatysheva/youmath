@@ -18,7 +18,6 @@ export const Layout = (props: LayoutProps) => {
       <div className={classes.centralSection}>
         <Sidebar />
         <div className={classes.mainWrapper}>
-          <div className={classes.toolbarSpan}></div>
           <NavBar />
           {children}  
         </div>   
