@@ -1,0 +1,1 @@
+export const apiUrl = 'http://zaylyasv.beget.tech/api/v1';

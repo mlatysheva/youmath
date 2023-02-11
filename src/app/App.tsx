@@ -10,10 +10,13 @@ import { ContactsPage } from '../pages/ContactsPage/ContactsPage';
 import { NotFoundPage } from '../pages/NotFoundPage/NotFoundPage';
 import { baseUrl as url } from './constants/baseUrl';
 import { Layout } from '../shared/ui/Layout/Layout';
-import { ThemeProvider, createMuiTheme } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import { blue } from '@mui/material/colors';
+import { createTheme } from '@mui/material/styles'
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: '#fefefe'
@@ -38,18 +41,20 @@ function App() {
         <ThemeProvider theme={theme}>
           <BrowserRouter>
             <Suspense fallback={<Spinner />}>
-              <Layout>             
-                <Routes>
-                  <Route path={`/${baseUrl}`} element={<HomePage />} />
-                  <Route
-                    path={`/${baseUrl}/catalogue`}
-                    element={<CataloguePage />}
-                  />
-                  {/* <Route path={`/${baseUrl}/catalogue:id`} element={<ItemPage />} /> */}
-                  <Route path={`/${baseUrl}/contacts`} element={<ContactsPage />} />
-                  <Route path={`/${baseUrl}/*`} element={<NotFoundPage />} />
-                </Routes>               
-              </Layout>
+              <Provider store={store}>
+                <Layout>             
+                  <Routes>
+                    <Route path={`/${baseUrl}`} element={<HomePage />} />
+                    <Route
+                      path={`/${baseUrl}/catalogue`}
+                      element={<CataloguePage />}
+                    />
+                    {/* <Route path={`/${baseUrl}/catalogue:id`} element={<ItemPage />} /> */}
+                    <Route path={`/${baseUrl}/contacts`} element={<ContactsPage />} />
+                    <Route path={`/${baseUrl}/*`} element={<NotFoundPage />} />
+                  </Routes>               
+                </Layout>
+              </Provider>
             </Suspense>
           </BrowserRouter>
         </ThemeProvider>
