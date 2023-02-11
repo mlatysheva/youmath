@@ -1,0 +1,22 @@
+.Layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.centralSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.mainWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbarSpan {
+  height: var(--header-height);
+}

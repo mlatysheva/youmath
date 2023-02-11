@@ -1,5 +1,3 @@
-import classes from './ContactsPage.module.scss';
-
 export const ContactsPage = () => {
   return (
     <div className="main">

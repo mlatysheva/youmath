@@ -6,10 +6,13 @@ interface Props {}
 
 const Header: React.FC<Props> = () => {
   return (
-    <div className={classes.header}>
+    <div
+      className={classes.header}
+    >      
       <a href="https://practicum.yandex.ru/" className={classes.logo}>
-        Math Laboratory
-      </a>
+        YouMath
+      </a>     
+            
       <p className={classes.slogan}>Making the world a better math</p>
       <Search />
     </div>
