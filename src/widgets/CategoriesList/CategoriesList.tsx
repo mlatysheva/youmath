@@ -1,21 +1,21 @@
 import { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from '../../app/store/hooks';
-import { getCategories } from '../../features/categoriesSlice';
+import { getCategories } from './categoriesSlice';
 import classes from './CategoriesList.module.scss';
-import { currentCategories } from '../../features/categoriesSlice';
-import { CategoryProps } from '../../app/types/categoryType';
+import { currentCategories } from './categoriesSlice';
+import { CategoryProps } from '../../entities/Category/categoryType';
 
 export const CategoriesList = () => {
 
   const dispatch = useAppDispatch();
-  const categories = useAppSelector((state) => state.categories.categories);
+  const categories = useAppSelector((state) => state.categories);
 
   /**
    * @description: Fetch and place the Categories to the Redux store on component mount
    */
   useEffect(() => {
     dispatch(getCategories());
-  }, [dispatch]);
+  }, []);
 
   if (categories.length > 0) {
     return (
