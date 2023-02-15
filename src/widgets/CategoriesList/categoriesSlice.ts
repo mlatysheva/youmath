@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { apiUrl } from '../app/constants/apiUrl';
-import { CategoryProps } from '../app/types/categoryType';
+import { apiUrl } from '../../app/constants/apiUrl';
+import { CategoryProps } from '../../entities/Category/categoryType';
 
 export const currentCategories = ['Высшая математика для гуманитариев (М.А. Евдокимов, С.Г. Афанасьева, 2005)',
   'Высшая математика для дистанционного обучения',
@@ -29,9 +29,7 @@ export const currentCategories = ['Высшая математика для гу
   'Числовые ряды',
   'Элементы векторного анализа и теории поля'];
 
-const initialState = {
-  categories: [] as CategoryProps[],
-};
+const initialState: CategoryProps[] = [];
 
 export const getCategories = createAsyncThunk(
   'categories/getCategories',
@@ -52,8 +50,9 @@ export const categoriesSlice = createSlice({
   name: 'categories',
   initialState, 
   reducers: {
-    setCategories: (state, action) => {
-      state.categories = action.payload;
+    setCategories: (state: CategoryProps[], action) => {
+      state = action.payload;
+      return state;
     }
   }
 });
