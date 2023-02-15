@@ -15,7 +15,7 @@ export const CategoriesList = () => {
    */
   useEffect(() => {
     dispatch(getCategories());
-  }, []);
+  }, [dispatch]);
 
   if (categories.length > 0) {
     return (
@@ -35,7 +35,7 @@ export const CategoriesList = () => {
         {currentCategories.map((category: string) => {
           return (
             <div
-              key={Date.now()}
+              key={category}
               className={classes.categoryLink}
             >
               {category}
