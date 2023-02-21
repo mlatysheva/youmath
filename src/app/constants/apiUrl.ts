@@ -1,1 +1,1 @@
-export const apiUrl = 'http://zaylyasv.beget.tech/api/v1';
+export const apiUrl = 'https://youmath.ru/api/v1';
