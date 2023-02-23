@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,500;8..144,600&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,500;8..144,600&display=swap';
 
 @font-face {
-  src: url(fonts/Roboto-Black.woff) format("woff"),
-    url(fonts/RobotoSerif-Black.ttf) format("ttf");
-  font-family: "Roboto Serif";
+  src: 
+    url('./fonts/Roboto-Black.woff') format('woff'),
+    url('./fonts/RobotoSerif-Black.ttf') format('ttf');
+  font-family: 'Roboto Serif';
   font-weight: 900;
 }
 
 @font-face {
-  src: url(fonts/RobotoFlex-Regular.ttf) format("ttf");
-  font-family: "Roboto Flex";
+  src: url('./fonts/RobotoFlex-Regular.ttf') format('ttf');
+  font-family: 'Roboto Flex';
   font-weight: 400;
 }
 
 @font-face {
-  src: url(fonts/Ubuntu-Bold.woff) format("woff"),
-    url(fonts/Ubuntu-Bold.ttf) format("ttf");
-  font-family: "Ubuntu";
+  src: 
+    url('./fonts/Ubuntu-Bold.woff') format('woff'),
+    url('./fonts/Ubuntu-Bold.ttf') format('ttf');
+  font-family: 'Ubuntu';
   font-weight: 700;
 }
