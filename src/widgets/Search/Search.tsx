@@ -1,13 +1,29 @@
-import React from 'react';
-import classes from './Search.module.scss';
+import { useState } from "react";
+import styles from "./Search.module.scss";
+import { InputSearch } from '../../shared/ui/InputSearch/InputSearch';
 
-interface Props {}
 
-export const Search: React.FC<Props> = () => {
+export const Search = () => {
+
+  const [value] = useState("");
+
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log('change', event.target.value);
+  };
+
+  const onSearch = (searchTerm: string) => {
+    console.log("search", searchTerm);
+  };
+
   return (
-    <div className={classes.searchContainer}>
-      <input type="text" className={classes.searchInput} placeholder="Поиск..." />
-      <button className={classes.searchButton}>Go</button>
+    <div className={styles.Container}>
+      <InputSearch
+        value={value}
+        onChange={onChange}
+        onSearch={onSearch}
+        className={styles.input}
+        placeholder="Введите категорию"
+      />
     </div>
   );
 };
