@@ -1,14 +1,28 @@
 :root {
-  --text-color: rgb(96 95 95);
-  --accent-text-color: rgb(91 74 159);
-  --accent-text-color-hover: rgb(54 31 149);
-  --secondary-color: rgb(49 37 62);
+  --text-color-dark: #282a2e;
+  --text-color-dim: #888;
+  --chapter-hover-color: #f7fded;
+  --secondary-text-color: #d3d6d5;
+  --accent-color: #12f3af;
+  --bg-blue-color: #3e5372;
+  --bg-green-color: #245353;
+  --bg-light-green-color: #cde2d9;
   --font-family-h1: 'Ubuntu', sans-serif;
   --font-family-h2: 'Roboto Serif';
   --font-family-main: 'Roboto Flex', sans-serif;
-  --links-color: rgb(96 95 95);
-  --header-height: 80px;
+  --top-header-height: 82px;
+  --header-height: calc(493px - var(--top-header-height));
   --nav-height: 40px;
-  --footer-height: 80px;
+  --footer-height: 313px;
   --sidebar-width: 320px;
+  --desktop-width: 1200px;
+  --mobile-width: 360px;
+  --tablet-width: 744px;
+
+  // font si
+  --font-size-xl: 42px;
+  --font-size-l: 32px;
+  --font-size-m: 28px;
+  --font-size-s: 20px;
+  --font-size-xs: 16px;
 }

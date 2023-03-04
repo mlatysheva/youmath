@@ -1,0 +1,17 @@
+.inputSearch {
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 16px !important;
+  height: 48px;
+  box-shadow: none;
+
+  &__input {
+    margin-left: 8px;
+    flex: 1;
+  }
+
+  &__iconButton {
+    padding: 10px;
+  }
+}
