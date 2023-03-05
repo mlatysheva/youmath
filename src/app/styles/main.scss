@@ -23,6 +23,7 @@
   .main {
     min-height: calc(100vh - var(--footer-height) - var(--header-height-tab) - var(--top-header-height));
   }
+
   .wrapper {
     width: 740px;
   }
@@ -32,6 +33,7 @@
   .main {
     min-height: calc(100vh - var(--footer-height) - var(--header-height-mob) - var(--top-header-height));
   }
+
   .wrapper {
     width: 360px;
   }
