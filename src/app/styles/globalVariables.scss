@@ -10,19 +10,43 @@
   --font-family-h1: 'Ubuntu', sans-serif;
   --font-family-h2: 'Roboto Serif';
   --font-family-main: 'Roboto Flex', sans-serif;
-  --top-header-height: 82px;
-  --header-height: calc(493px - var(--top-header-height));
-  --nav-height: 40px;
-  --footer-height: 313px;
-  --sidebar-width: 320px;
+
+  // Heights
+  --top-header-height: 80px;
+  --header-height: calc(490px - var(--top-header-height));
+  --header-height-tab: calc(420px - var(--top-header-height));
+  --header-height-mob: calc(320px - var(--top-header-height));
+  --footer-height: 310px;
+
+  // Breakpoints
   --desktop-width: 1200px;
   --mobile-width: 360px;
   --tablet-width: 744px;
 
-  // font si
-  --font-size-xl: 42px;
-  --font-size-l: 32px;
-  --font-size-m: 28px;
-  --font-size-s: 20px;
+  // Font sizes
+  --font-size-xl: 2.5rem;
+  --font-size-l: 2rem;
+  --font-size-m: 1.75rem;
+  --font-size-sm: 1.5rem;
+  --font-size-s: 1.25rem;
   --font-size-xs: 16px;
+  --font-size-xl-tab: 2.5rem;
+  --font-size-l-tab: 2rem;
+  --font-size-m-tab: 1.75rem;
+  --font-size-sm-tab: 1.5rem;
+  --font-size-s-tab: 1.25rem;
+  --font-size-xs-tab: 14px;
+  --font-size-xl-mob: 1.75rem;
+  --font-size-l-mob: 1.5rem;
+  --font-size-m-mob: 1.5rem;
+  --font-size-sm-mob: 1.25rem;
+  --font-size-s-mob: 1.25rem;
+  --font-size-xs-mob: 14px; 
+
+  // Media queries
+  --breakpoint-mobile-min: 320px;
+  --breakpoint-mobile-max: 480px;
+  --breakpoint-tablet-max: 768px;
+  --breakpoint-tablet-horizontal: 1024px;
+  --breakpoint-desktop-max: 1200px;
 }

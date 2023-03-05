@@ -8,7 +8,7 @@ export const TopHeader = () => {
     <div
       className={classes.topHeader}
     >      
-      <div className={`${classes.topHeader} wrapper`}>
+      <div className={`${classes.topHeaderWrapper} wrapper`}>
         <a href="/" className={classes.logo}>
           <img src={logo} className={classes.logo} alt="Company logo" />
         </a>

@@ -11,17 +11,3 @@
   pointer-events: none;
 }
 
-@media (max-width: 500px) {
-  .home-page {
-    padding: 0.5rem;
-  }
-
-  .home-page__hero-image {
-    width: 300px;
-    height: 150px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-}
