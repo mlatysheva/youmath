@@ -44,8 +44,20 @@ body {
   height: 100%;
   width: 100%;
   line-height: 1;
-  font-size: 16px;
+  font-size: var(--font-size-xs);
   text-size-adjust: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: var(--font-size-xs-tab);
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  html {
+    font-size: var(--font-size-xs-mob);
+  }
 }
 
 input,

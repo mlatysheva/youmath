@@ -16,3 +16,15 @@
   width: 1200px;
   margin: 0 auto;
 }
+
+@media only screen and (min-width: 741px) and (max-width: 1024px) {
+  .main {
+    height: calc(100vh - var(--footer-height) - var(--header-height-tab) - var(--top-header-height));
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .main {
+    height: calc(100vh - var(--footer-height) - var(--header-height-mob) - var(--top-header-height));
+  }
+}

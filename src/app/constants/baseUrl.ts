@@ -1,1 +1,1 @@
-export const baseUrl = 'math-laba';
+export const BASE_URL = 'youmath';
