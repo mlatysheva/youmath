@@ -47,6 +47,12 @@
   margin-left: 1rem;
 }
 
+.topHeaderNav a:hover {
+  text-decoration: underline 2px;
+  text-decoration-color: var(--accent-color);
+  text-underline-offset: 0.3rem;
+}
+
 .title {
   font-size: var(--font-size-xl);
   margin-top: 0;
