@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { apiUrl } from '../../app/constants/apiUrl';
+import { API_URL } from '../../app/constants/apiUrl';
 import { CategoryProps } from '../../entities/Category/categoryType';
 
 export const currentCategories = ['Высшая математика для гуманитариев (М.А. Евдокимов, С.Г. Афанасьева, 2005)',
@@ -35,7 +35,7 @@ export const getCategories = createAsyncThunk(
   'categories/getCategories',
   async(_, { rejectWithValue, dispatch }) => {
     try {
-      const res = await axios.get(`${apiUrl}/categories/`);
+      const res = await axios.get(`${API_URL}/categories/`);
       const categories = res.data.results;
       dispatch(setCategories(categories));
       console.dir(categories);
