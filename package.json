@@ -1,8 +1,8 @@
 {
-  "name": "math-laba",
+  "name": "youmath",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mlatysheva.github.io/math-laba/",
+  "homepage": "https://mlatysheva.github.io/youmath/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -34,7 +34,7 @@
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "deploy": "gh-pages -d build --message 'deploy: math-laba to GitHub Pages'"
+    "deploy": "gh-pages -d build --message 'deploy: youmath to GitHub Pages'"
   },
   "eslintConfig": {
     "extends": [
