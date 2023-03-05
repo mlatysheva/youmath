@@ -52,8 +52,9 @@ body {
   html {
     font-size: var(--font-size-xs-tab);
   }
- }
- @media only screen and (max-width: 740px) {
+}
+
+@media only screen and (max-width: 740px) {
   html {
     font-size: var(--font-size-xs-mob);
   }

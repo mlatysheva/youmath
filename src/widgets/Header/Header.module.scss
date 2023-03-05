@@ -87,12 +87,15 @@
   .header {
     height: var(--header-height-tab);
   }
+
   .headerMain {
     width: 530px;
   }
+
   .title {
     font-size: var(--font-size-xl-tab);
   }
+
   .regular {
     font-size: var(--font-size-s-tab);
     margin-bottom: 3rem;
@@ -103,15 +106,19 @@
   .header {
     height: var(--header-height-mob);
   }
+
   .headerMain {
     width: 310px;
   }
+
   .title {
     font-size: var(--font-size-xl-mob);
   }
+
   .randomItems {
     display: none;
   }
+
   .regular {
     margin-top: 1rem;
     margin-bottom: 2rem;
