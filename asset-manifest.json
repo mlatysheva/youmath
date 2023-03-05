@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/math-laba/static/css/main.be5f79da.css",
-    "main.js": "/math-laba/static/js/main.ff55edba.js",
+    "main.css": "/math-laba/static/css/main.ef3734fb.css",
+    "main.js": "/math-laba/static/js/main.d0052331.js",
     "static/media/Ubuntu-Bold.ttf": "/math-laba/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
     "static/media/RobotoSerif-Black.ttf": "/math-laba/static/media/RobotoSerif-Black.f028f40b7975811237ac.ttf",
     "static/media/Ubuntu-Bold.woff": "/math-laba/static/media/Ubuntu-Bold.fb516a328aa972109935.woff",
@@ -10,11 +10,11 @@
     "static/media/logo.svg": "/math-laba/static/media/logo.e0b6663c6bc8b4d0dc3a68cdb0b9c663.svg",
     "index.html": "/math-laba/index.html",
     "static/media/search.svg": "/math-laba/static/media/search.dbd2604c9483367074efcfff72c26c62.svg",
-    "main.be5f79da.css.map": "/math-laba/static/css/main.be5f79da.css.map",
-    "main.ff55edba.js.map": "/math-laba/static/js/main.ff55edba.js.map"
+    "main.ef3734fb.css.map": "/math-laba/static/css/main.ef3734fb.css.map",
+    "main.d0052331.js.map": "/math-laba/static/js/main.d0052331.js.map"
   },
   "entrypoints": [
-    "static/css/main.be5f79da.css",
-    "static/js/main.ff55edba.js"
+    "static/css/main.ef3734fb.css",
+    "static/js/main.d0052331.js"
   ]
 }
