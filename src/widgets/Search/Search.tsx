@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Search.module.scss";
+import classes from "./Search.module.scss";
 import { InputSearch } from '../../shared/ui/InputSearch/InputSearch';
 
 
@@ -16,12 +16,12 @@ export const Search = () => {
   };
 
   return (
-    <div className={styles.Container}>
+    <div className={classes.Container}>
       <InputSearch
         value={value}
         onChange={onChange}
         onSearch={onSearch}
-        className={styles.input}
+        className={classes.input}
         placeholder="Введите категорию"
       />
     </div>

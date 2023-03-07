@@ -1,18 +1,9 @@
-.header {
-  width: 100%;
-  height: var(--header-height);
-  padding: 1rem;
-  background-color: var(--bg-green-color);
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .topHeader {
   width: 100%;
   height: var(--top-header-height);
+  z-index: 1000;
+  top: 0;
+  position: fixed;
   background-color: var(--bg-green-color);
   display: flex;
   flex-direction: row;
@@ -28,6 +19,20 @@
 .topHeaderNav {
   margin-left: auto;
   display: flex;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: var(--header-height);
+  position: relative;
+  top: var(--top-header-height);
+  padding: 1rem;
+  background-color: var(--bg-green-color);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -51,6 +56,10 @@
   text-decoration: underline 2px;
   text-decoration-color: var(--accent-color);
   text-underline-offset: 0.3rem;
+}
+
+.searchInTopWrapper {
+  margin-left: auto;
 }
 
 .title {
@@ -104,6 +113,10 @@
   .regular {
     font-size: var(--font-size-s-tab);
     margin-bottom: 3rem;
+  }
+
+  .searchInTopWrapper {
+    width: 344px;
   }
 }
 
