@@ -1,6 +1,7 @@
 .topHeader {
   width: 100%;
   height: var(--top-header-height);
+  position: sticky;
   z-index: 1000;
   top: 0;
   position: fixed;
@@ -35,6 +36,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
 
 .headerMain {
   width: 588px;
