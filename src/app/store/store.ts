@@ -1,6 +1,6 @@
 import { configureStore} from '@reduxjs/toolkit';
 import categoriesReducer from '../../widgets/CategoriesList/categoriesSlice';
-import { popularTasksReducer } from '../../widgets/PopularTasks/model/slice';
+import { popularTasksReducer } from '../../widgets/PopularTasks/model/popularTasksSlice';
 
 export const store = configureStore({
   reducer: {

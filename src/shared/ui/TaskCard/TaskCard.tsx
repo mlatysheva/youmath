@@ -1,5 +1,6 @@
 import { Button } from '@mui/material';
 import classes from './TaskCard.module.scss';
+import { OptionsList, OptionsListProps } from './OptionsList';
 
 export interface TaskCardProps {
   className?: string;
@@ -13,7 +14,7 @@ export interface TaskCardProps {
   create_date?: string;
   category?: string;
   category_id?: string;
-  options: number[];
+  options?: OptionsListProps;
 }
 
 export const TaskCard = (props: TaskCardProps) => {
@@ -31,16 +32,27 @@ export const TaskCard = (props: TaskCardProps) => {
     >
       <div className={classes.firstColumn}>
         <div className={classes.title}>{title}</div>
-        <div className={classes.author}>{question_text}</div>
+        <div className={classes.text}>{question_text}</div>
         <div className={classes.options}>
-          {options.map((option, index) => (
-            <div className={classes.option} key={index}>{option}</div>
-          ))}
+          <OptionsList {...options} />
         </div>
       </div>
       <div className={classes.secondColumn}>
-        <div className={classes.description}>{description}</div>
-        <Button >
+        <div className={classes.text}>{description}</div>
+        <Button 
+          variant="contained"
+          sx={{
+            background: 'none',
+            color: textColor,
+            textDecoration: 'underline',
+            marginLeft: 0,
+            paddingLeft: 0,
+            '&:hover': {
+              color: 'var(--accent-color)',
+              background: 'none'
+            }
+          }}
+        >
           Подробнее
         </Button>
       </div>      

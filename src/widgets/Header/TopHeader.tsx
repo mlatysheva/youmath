@@ -17,8 +17,6 @@ export const TopHeader = () => {
     } else {
       setCollapsed(true);
     }
-    console.log(`pathname is ${pathname}, ${pathname !== `/${BASE_URL}`}, collapsed is ${collapsed}`);
-
   }, [pathname, collapsed]);
 
   return (

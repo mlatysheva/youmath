@@ -2,21 +2,21 @@ import { Typography } from '@mui/material';
 import classes from './PopularTasks.module.scss';
 import { useAppDispatch, useAppSelector } from '../../../app/store/hooks';
 import { useEffect } from 'react';
-import { getPopularTasks } from '../model/slice';
+import { getPopularTasks } from '../model/popularTasksSlice';
 import { hardCodedpopularTasks } from '../model/popularTasksList';
 import { TaskCard, TaskCardProps } from '../../../shared/ui/TaskCard/TaskCard';
+import { styleOptions } from '../model/popularTasksList';
 
 export const PopularTasks = () => {
 
   const dispatch = useAppDispatch();
-  const popularTasks = useAppSelector((state) => state.popularTasks);
+  const popularTasks: TaskCardProps[] = useAppSelector((state) => state.popularTasks);
 
   /**
    * @description: Fetch and place the Categories to the Redux store on component mount
    */
   useEffect(() => {
     dispatch(getPopularTasks());
-    console.dir(hardCodedpopularTasks);
   }, []);
 
   return (
@@ -33,12 +33,12 @@ export const PopularTasks = () => {
           Популярные задачи
         </Typography>
         <div className={classes.popularTasksList}>
-          {(popularTasks.length > 0) ? popularTasks.map((task: TaskCardProps) => (
+          {(popularTasks.length > 0) ? popularTasks.map((task: TaskCardProps, index) => (
             <TaskCard 
               key={task.title}
-              backgroundColor={task.backgroundColor}
-              options={[]} 
-              textColor={task.textColor} 
+              backgroundColor={styleOptions[index].backgroundColor}
+              options={task.options} 
+              textColor={styleOptions[index].textColor} 
               title = {task.title} 
               question_text = {task.question_text}
               description = {task.description}            
@@ -48,7 +48,7 @@ export const PopularTasks = () => {
             <TaskCard 
               key={task.title}
               backgroundColor={task.backgroundColor}
-              options={[]} 
+              options={task.options} 
               textColor={task.textColor} 
               title = {task.title} 
               question_text = {task.question_text}
