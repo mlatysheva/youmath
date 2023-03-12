@@ -43,7 +43,8 @@
     "max-len": ["error", { "ignoreComments": true, "code": 120 }],
     "no-param-reassign": "off",
     "no-undef": "off",
-    "@typescript-eslint/no-empty-interface": "off"
+    "@typescript-eslint/no-empty-interface": "off",
+    "react/jsx-props-no-spreading": "off"
   },
   "settings": {
     "react": {
