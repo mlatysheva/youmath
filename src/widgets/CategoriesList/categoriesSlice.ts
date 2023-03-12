@@ -38,7 +38,6 @@ export const getCategories = createAsyncThunk(
       const res = await axios.get(`${API_URL}/categories/`);
       const categories = res.data.results;
       dispatch(setCategories(categories));
-      console.dir(categories);
     } catch (error) {
       rejectWithValue(error);
       console.error(error);

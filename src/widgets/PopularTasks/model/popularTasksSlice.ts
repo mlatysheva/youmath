@@ -9,10 +9,10 @@ export const getPopularTasks = createAsyncThunk(
   'popularTasks/getPopularTasks',
   async(_, { rejectWithValue, dispatch }) => {
     try {
-      const res = await axios.get(`${API_URL}/works?offset=5&limit=3`);
+      const res = await axios.get(`${API_URL}/works?offset=4&limit=3`);
       const works = res.data.results;
       dispatch(popularTasksActions.setPopularTasks(works));
-      console.dir(works);
+      console.dir(res.data);
     } catch (error) {
       rejectWithValue(error);
       console.error(error);

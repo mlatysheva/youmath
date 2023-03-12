@@ -9,3 +9,11 @@
 .tasksWrapper {
   flex-direction: column;
 }
+
+.popularTasksList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
+}
