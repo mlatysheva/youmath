@@ -17,8 +17,7 @@ export interface TaskCardProps {
 }
 
 export const TaskCard = (props: TaskCardProps) => {
-  const { 
-    className, 
+  const {  
     backgroundColor, 
     textColor, 
     title, 
