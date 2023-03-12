@@ -6,7 +6,7 @@
 .main {
   height: 100%;
   flex-grow: 1;
-  padding-top: calc(2rem + var(--top-header-height));
+  padding-top: var(--top-header-height);
   margin: 0 auto;
   margin-bottom: 4rem;
   width: 100%;

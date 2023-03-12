@@ -24,6 +24,11 @@ const Header: React.FC = () => {
               <LinkItem className={classes.randomLink} key={item.title} item={item} />
             ))}
           </div>
+          <div className={classes.randomItemsTablet}>
+            {randomItems.slice(0,2).map((item) => (
+              <LinkItem className={classes.randomLink} key={item.title} item={item} />
+            ))}
+          </div>
         </div>
       </div>
     );

@@ -1,0 +1,11 @@
+.PopularTasks {
+  width: 100%;
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  background: url('../../../shared/assets/images/BG-Image.jpg');
+}
+
+.tasksWrapper {
+  flex-direction: column;
+}

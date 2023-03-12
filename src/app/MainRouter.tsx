@@ -11,7 +11,7 @@ export const MainRouter: React.FC = () => {
   const baseUrl = BASE_URL;
 
   return (
-    <div className={'main' + ' ' + 'wrapper'}>
+    <div className={'main'}>
       <Routes>
         <Route index element={<HomePage />} />
         <Route path={`/${baseUrl}`} element={<HomePage />} />
