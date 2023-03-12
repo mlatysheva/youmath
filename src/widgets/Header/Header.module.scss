@@ -83,6 +83,15 @@
   align-items: center;
 }
 
+.randomItemsTablet {
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  flex-direction: row;
+  align-items: center;
+  display: none;
+}
+
 .randomLink {
   margin-right: 1rem;
   padding: 0.7rem;
@@ -116,7 +125,15 @@
   }
 
   .searchInTopWrapper {
-    width: 344px;
+    width: 340px;
+  }
+
+  .randomItems {
+    display: none;
+  }
+
+  .randomItemsTablet {
+    display: flex;
   }
 }
 
