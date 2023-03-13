@@ -48,8 +48,9 @@ export const TaskCard = (props: TaskCardProps) => {
             marginLeft: 0,
             paddingLeft: 0,
             '&:hover': {
-              color: 'var(--accent-color)',
-              background: 'none'
+              // color: 'var(--accent-color)',
+              background: 'none',
+              textDecoration: 'underline',
             }
           }}
         >

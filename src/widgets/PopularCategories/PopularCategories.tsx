@@ -9,7 +9,9 @@ export const PopularCategories = () => {
       <Typography 
         sx={{
           fontSize: '2rem', 
-          fontWeight: 'bold', 
+          fontFamily: 'Ubuntu',
+          fontStyle: 'normal',
+          fontWeight: 700, 
           color: '#000000',
           textAlign: 'left',
         }}
