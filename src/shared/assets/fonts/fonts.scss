@@ -2,22 +2,22 @@
 
 @font-face {
   src:
-    url('./fonts/Roboto-Black.woff') format('woff'),
-    url('./fonts/RobotoSerif-Black.ttf') format('ttf');
+    url('./Roboto-Black.woff') format('woff'),
+    url('./RobotoSerif-Black.ttf') format('ttf');
   font-family: 'Roboto Serif';
   font-weight: 900;
 }
 
 @font-face {
-  src: url('./fonts/RobotoFlex-Regular.ttf') format('ttf');
+  src: url('./RobotoFlex-Regular.ttf') format('ttf');
   font-family: 'Roboto Flex';
   font-weight: 400;
 }
 
 @font-face {
   src:
-    url('./fonts/Ubuntu-Bold.woff') format('woff'),
-    url('./fonts/Ubuntu-Bold.ttf') format('ttf');
+    url('./Ubuntu-Bold.woff') format('woff'),
+    url('./Ubuntu-Bold.ttf') format('ttf');
   font-family: Ubuntu;
   font-weight: 700;
 }

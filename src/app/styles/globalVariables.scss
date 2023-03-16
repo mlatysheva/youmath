@@ -7,21 +7,11 @@
   --bg-blue-color: #3e5372;
   --bg-green-color: #245353;
   --bg-light-green-color: #cde2d9;
+
+  //  Font families
   --font-family-h1: 'Ubuntu', sans-serif;
-  --font-family-h2: 'Roboto Serif';
+  --font-family-h2: 'Ubuntu', sans-serif;
   --font-family-main: 'Roboto Flex', sans-serif;
-
-  // Heights
-  --top-header-height: 80px;
-  --header-height: calc(490px - var(--top-header-height));
-  --header-height-tab: calc(420px - var(--top-header-height));
-  --header-height-mob: calc(320px - var(--top-header-height));
-  --footer-height: 310px;
-
-  // Breakpoints
-  --desktop-width: 1200px;
-  --mobile-width: 360px;
-  --tablet-width: 744px;
 
   // Font sizes
   --font-size-xl: 2.5rem;
@@ -42,6 +32,18 @@
   --font-size-sm-mob: 1.25rem;
   --font-size-s-mob: 1.25rem;
   --font-size-xs-mob: 14px;
+
+  // Heights
+  --top-header-height: 80px;
+  --header-height: calc(490px - var(--top-header-height));
+  --header-height-tab: calc(420px - var(--top-header-height));
+  --header-height-mob: calc(320px - var(--top-header-height));
+  --footer-height: 310px;
+
+  // Breakpoints
+  --desktop-width: 1200px;
+  --mobile-width: 360px;
+  --tablet-width: 744px;
 
   // Media queries
   --breakpoint-mobile-min: 320px;
