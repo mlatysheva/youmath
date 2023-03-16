@@ -2,7 +2,7 @@
 
 This is a website that provides solutions to some of university math tasks. It helps students to master advanced mathematical topics
 
-![Main screen](screenshots/screenshot_main.png)
+![Main screen](screenshots/schreenshot_main.png)
 
 ## Available Scripts
 
